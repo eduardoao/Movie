@@ -1,0 +1,15 @@
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\bin\Debug\net8.0\Movie.UseCases.deps.json
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\bin\Debug\net8.0\Movie.UseCases.dll
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\bin\Debug\net8.0\Movie.UseCases.pdb
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\bin\Debug\net8.0\Movie.Core.dll
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\bin\Debug\net8.0\Movie.Core.pdb
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.csproj.AssemblyReference.cache
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.AssemblyInfoInputs.cache
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.AssemblyInfo.cs
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.csproj.CoreCompileInputs.cache
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.Us.586F99BD.Up2Date
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.dll
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\refint\Movie.UseCases.dll
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.pdb
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\ref\Movie.UseCases.dll

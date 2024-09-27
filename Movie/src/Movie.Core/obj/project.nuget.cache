@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "zcsYz/BPv0c=",
+  "success": true,
+  "projectFilePath": "C:\\CURSO\\POCs\\Roadmap\\Movie\\Movie\\src\\Movie.Core\\Movie.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\ardalis.guardclauses\\4.6.0\\ardalis.guardclauses.4.6.0.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\ardalis.result\\9.1.0\\ardalis.result.9.1.0.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\ardalis.sharedkernel\\1.6.0\\ardalis.sharedkernel.1.6.0.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\ardalis.smartenum\\8.0.0\\ardalis.smartenum.8.0.0.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\ardalis.specification\\8.0.0\\ardalis.specification.8.0.0.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.1\\microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\eduardo.alcantara\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

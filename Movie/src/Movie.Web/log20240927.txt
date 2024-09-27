@@ -1,0 +1,146 @@
+2024-09-27 16:14:23.878 -03:00 [INF] Registered 5 endpoints in 349 milliseconds.
+2024-09-27 16:14:24.489 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-09-27 16:14:24.543 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL,
+    "PhoneNumber_CountryCode" TEXT NULL,
+    "PhoneNumber_Number" TEXT NULL,
+    "PhoneNumber_Extension" TEXT NULL
+);
+2024-09-27 16:14:24.666 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2024-09-27 16:14:24.774 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2024-09-27 16:14:24.783 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2024-09-27 16:14:24.855 -03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-09-27 16:14:24.879 -03:00 [INF] Now listening on: https://localhost:57679
+2024-09-27 16:14:24.879 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-27 16:14:24.879 -03:00 [INF] Hosting environment: Development
+2024-09-27 16:14:24.879 -03:00 [INF] Content root path: C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Web
+2024-09-27 16:14:37.247 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-09-27 16:14:37.277 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 30.7967ms
+2024-09-27 16:14:37.289 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-09-27 16:14:37.381 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 92.0065ms
+2024-09-27 16:14:37.434 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2024-09-27 16:14:37.435 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2024-09-27 16:14:37.435 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2024-09-27 16:14:37.436 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-27 16:14:37.445 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-09-27 16:14:37.445 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 9.884ms
+2024-09-27 16:14:37.464 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-27 16:14:37.464 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-27 16:14:37.467 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 31.103ms
+2024-09-27 16:14:37.467 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 152073 text/css 33.0202ms
+2024-09-27 16:14:37.482 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-27 16:14:37.482 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 46.5432ms
+2024-09-27 16:14:38.045 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-09-27 16:14:38.055 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-09-27 16:14:38.062 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - null null
+2024-09-27 16:14:38.063 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-27 16:14:38.063 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - 200 628 image/png 0.6979ms
+2024-09-27 16:14:38.452 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 406.5507ms
+2024-09-27 16:21:55.765 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-09-27 16:21:55.769 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 4.3295ms
+2024-09-27 16:21:55.813 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2024-09-27 16:21:55.813 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2024-09-27 16:21:55.814 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-27 16:21:55.814 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-09-27 16:21:55.814 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 0.9062ms
+2024-09-27 16:21:55.816 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2024-09-27 16:21:55.821 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-27 16:21:55.822 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 152073 text/css 9.1152ms
+2024-09-27 16:21:55.822 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-27 16:21:55.822 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 8.5854ms
+2024-09-27 16:21:55.836 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-27 16:21:55.836 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 20.7242ms
+2024-09-27 16:21:56.229 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-09-27 16:21:56.229 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - null null
+2024-09-27 16:21:56.230 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-27 16:21:56.230 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - 200 628 image/png 0.6091ms
+2024-09-27 16:21:56.230 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 1.0565ms
+2024-09-27 16:37:55.182 -03:00 [INF] Registered 5 endpoints in 317 milliseconds.
+2024-09-27 16:37:55.717 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-09-27 16:37:55.815 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2024-09-27 16:37:55.887 -03:00 [INF] Now listening on: https://localhost:57679
+2024-09-27 16:37:55.888 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-27 16:37:55.888 -03:00 [INF] Hosting environment: Development
+2024-09-27 16:37:55.888 -03:00 [INF] Content root path: C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Web
+2024-09-27 16:37:56.163 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-09-27 16:37:56.188 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 25.9165ms
+2024-09-27 16:37:56.198 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-09-27 16:37:56.283 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 85.3054ms
+2024-09-27 16:37:56.313 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2024-09-27 16:37:56.316 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2024-09-27 16:37:56.316 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-27 16:37:56.318 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2024-09-27 16:37:56.328 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-09-27 16:37:56.328 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 12.6979ms
+2024-09-27 16:37:56.347 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-27 16:37:56.347 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-27 16:37:56.352 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 35.5964ms
+2024-09-27 16:37:56.352 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 152073 text/css 38.3675ms
+2024-09-27 16:37:56.356 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-27 16:37:56.356 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 39.0894ms
+2024-09-27 16:37:56.951 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-09-27 16:37:56.960 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-09-27 16:37:57.333 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 381.5855ms
+2024-09-27 16:41:59.788 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-09-27 16:41:59.789 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 1.3084ms
+2024-09-27 16:41:59.803 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2024-09-27 16:41:59.803 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2024-09-27 16:41:59.803 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-09-27 16:41:59.804 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 0.7124ms
+2024-09-27 16:41:59.804 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2024-09-27 16:41:59.807 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-27 16:41:59.815 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-27 16:41:59.816 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 152073 text/css 13.6421ms
+2024-09-27 16:41:59.817 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-27 16:41:59.818 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 10.8082ms
+2024-09-27 16:41:59.827 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-27 16:41:59.828 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 23.2407ms
+2024-09-27 16:41:59.931 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/favicon-16x16.png - null null
+2024-09-27 16:41:59.932 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2024-09-27 16:41:59.932 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/favicon-16x16.png - 200 665 image/png 0.3731ms
+2024-09-27 16:42:00.002 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-09-27 16:42:00.003 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.9308ms
+2024-09-27 16:44:27.164 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-09-27 16:44:27.165 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 1.0483ms
+2024-09-27 16:44:27.334 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-09-27 16:44:27.335 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.7064ms
+2024-09-27 16:44:37.285 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/Contributors - null null
+2024-09-27 16:44:37.298 -03:00 [INF] Executing endpoint 'HTTP: GET /Contributors'
+2024-09-27 16:44:37.325 -03:00 [INF] Handling ListContributorsQuery
+2024-09-27 16:44:37.325 -03:00 [INF] Property Skip : null
+2024-09-27 16:44:37.325 -03:00 [INF] Property Take : null
+2024-09-27 16:44:37.372 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name, PhoneNumber_Number AS PhoneNumber FROM Contributors
+2024-09-27 16:44:37.375 -03:00 [INF] Handled ListContributorsQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Movie.UseCases.Contributors.ContributorDTO]] in 50 ms
+2024-09-27 16:44:37.387 -03:00 [INF] Executed endpoint 'HTTP: GET /Contributors'
+2024-09-27 16:44:37.390 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/Contributors - 200 null application/json 105.1399ms
+2024-09-27 16:44:37.410 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/favicon.ico - null null
+2024-09-27 16:44:37.410 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/favicon.ico - 404 0 null 0.3232ms
+2024-09-27 16:44:37.411 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/favicon.ico, Response status code: 404
+2024-09-27 16:44:55.045 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:57679/Contributors - null null
+2024-09-27 16:44:55.045 -03:00 [INF] Executing endpoint 'HTTP: GET /Contributors'
+2024-09-27 16:44:55.046 -03:00 [INF] Handling ListContributorsQuery
+2024-09-27 16:44:55.046 -03:00 [INF] Property Skip : null
+2024-09-27 16:44:55.046 -03:00 [INF] Property Take : null
+2024-09-27 16:44:55.085 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT Id, Name, PhoneNumber_Number AS PhoneNumber FROM Contributors
+2024-09-27 16:44:55.086 -03:00 [INF] Handled ListContributorsQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Movie.UseCases.Contributors.ContributorDTO]] in 39 ms
+2024-09-27 16:44:55.094 -03:00 [INF] Executed endpoint 'HTTP: GET /Contributors'
+2024-09-27 16:44:55.094 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:57679/Contributors - 200 null application/json 48.7941ms

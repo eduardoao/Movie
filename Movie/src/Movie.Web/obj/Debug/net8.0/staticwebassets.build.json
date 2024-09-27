@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "3c9+dk3+7WVeGt2izdmfx38O8ZVWf0kwSQAfAXCdIw4=",
+  "Source": "Movie.Web",
+  "BasePath": "_content/Movie.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Movie.Web\\wwwroot",
+      "Source": "Movie.Web",
+      "ContentRoot": "C:\\CURSO\\POCs\\Roadmap\\Movie\\Movie\\src\\Movie.Web\\wwwroot\\",
+      "BasePath": "_content/Movie.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\CURSO\\POCs\\Roadmap\\Movie\\Movie\\src\\Movie.Web\\wwwroot\\.gitkeep",
+      "SourceId": "Movie.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CURSO\\POCs\\Roadmap\\Movie\\Movie\\src\\Movie.Web\\wwwroot\\",
+      "BasePath": "_content/Movie.Web",
+      "RelativePath": ".gitkeep",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.gitkeep"
+    }
+  ]
+}
