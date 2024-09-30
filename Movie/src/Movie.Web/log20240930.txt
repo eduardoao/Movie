@@ -1,0 +1,92 @@
+2024-09-30 11:19:57.852 -03:00 [INF] Registered 5 endpoints in 388 milliseconds.
+2024-09-30 11:19:58.443 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-09-30 11:19:58.554 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2024-09-30 11:19:58.639 -03:00 [INF] Now listening on: https://localhost:57679
+2024-09-30 11:19:58.639 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-30 11:19:58.640 -03:00 [INF] Hosting environment: Development
+2024-09-30 11:19:58.640 -03:00 [INF] Content root path: C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Web
+2024-09-30 11:19:59.130 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-09-30 11:19:59.165 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 35.8457ms
+2024-09-30 11:19:59.175 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-09-30 11:19:59.270 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 95.6468ms
+2024-09-30 11:19:59.300 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2024-09-30 11:19:59.301 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2024-09-30 11:19:59.306 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2024-09-30 11:19:59.315 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-09-30 11:19:59.315 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 14.6233ms
+2024-09-30 11:19:59.330 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-30 11:19:59.333 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 152073 text/css 32.7449ms
+2024-09-30 11:19:59.341 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-30 11:19:59.341 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 35.166ms
+2024-09-30 11:19:59.413 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-30 11:19:59.416 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-30 11:19:59.416 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 3.4126ms
+2024-09-30 11:20:00.269 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-09-30 11:20:00.278 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-09-30 11:20:00.592 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 323.5326ms
+2024-09-30 11:20:30.118 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:57679/Contributors - application/json 89
+2024-09-30 11:20:30.120 -03:00 [INF] Executing endpoint 'HTTP: POST /Contributors'
+2024-09-30 11:20:30.194 -03:00 [INF] Handling CreateContributorCommand
+2024-09-30 11:20:30.194 -03:00 [INF] Property Name : John Doe 2
+2024-09-30 11:20:30.194 -03:00 [INF] Property PhoneNumber : 1234567890
+2024-09-30 11:21:08.361 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 10), @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status", "PhoneNumber_CountryCode", "PhoneNumber_Extension", "PhoneNumber_Number")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2024-09-30 11:21:13.651 -03:00 [INF] Handled CreateContributorCommand with Ardalis.Result.Result`1[System.Int32] in 43456 ms
+2024-09-30 11:22:24.072 -03:00 [INF] Executed endpoint 'HTTP: POST /Contributors'
+2024-09-30 11:22:24.075 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:57679/Contributors - 200 null application/json 113954.9523ms
+2024-09-30 11:31:24.636 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:57679/Contributors/1 - application/json 38
+2024-09-30 11:31:24.639 -03:00 [INF] Executing endpoint 'HTTP: PUT /Contributors/{ContributorId:int}'
+2024-09-30 11:31:24.647 -03:00 [INF] Handling UpdateContributorCommand
+2024-09-30 11:31:24.647 -03:00 [INF] Property ContributorId : 1
+2024-09-30 11:31:24.648 -03:00 [INF] Property NewName : ardalis2
+2024-09-30 11:31:24.739 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name", "c"."Status", "c"."PhoneNumber_CountryCode", "c"."PhoneNumber_Extension", "c"."PhoneNumber_Number"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__p_0
+LIMIT 1
+2024-09-30 11:31:24.747 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Contributors" SET "Name" = @p0, "Status" = @p1
+WHERE "Id" = @p2
+RETURNING 1;
+2024-09-30 11:31:24.754 -03:00 [INF] Handled UpdateContributorCommand with Ardalis.Result.Result`1[Movie.UseCases.Contributors.ContributorDTO] in 106 ms
+2024-09-30 11:31:24.755 -03:00 [INF] Handling GetContributorQuery
+2024-09-30 11:31:24.755 -03:00 [INF] Property ContributorId : 1
+2024-09-30 11:31:24.768 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__contributorId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name", "c"."Status", "c"."PhoneNumber_CountryCode", "c"."PhoneNumber_Extension", "c"."PhoneNumber_Number"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__contributorId_0
+LIMIT 1
+2024-09-30 11:31:24.768 -03:00 [INF] Handled GetContributorQuery with Ardalis.Result.Result`1[Movie.UseCases.Contributors.ContributorDTO] in 12 ms
+2024-09-30 11:31:24.770 -03:00 [INF] Executed endpoint 'HTTP: PUT /Contributors/{ContributorId:int}'
+2024-09-30 11:31:24.770 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:57679/Contributors/1 - 200 null application/json 134.3172ms
+2024-09-30 11:32:54.838 -03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:57679/Contributors/1 - application/json 38
+2024-09-30 11:32:54.839 -03:00 [INF] Executing endpoint 'HTTP: PUT /Contributors/{ContributorId:int}'
+2024-09-30 11:32:54.839 -03:00 [INF] Handling UpdateContributorCommand
+2024-09-30 11:32:54.840 -03:00 [INF] Property ContributorId : 1
+2024-09-30 11:32:54.840 -03:00 [INF] Property NewName : ardalis2
+2024-09-30 11:32:54.843 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name", "c"."Status", "c"."PhoneNumber_CountryCode", "c"."PhoneNumber_Extension", "c"."PhoneNumber_Number"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__p_0
+LIMIT 1
+2024-09-30 11:32:54.844 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Contributors" SET "Name" = @p0, "Status" = @p1
+WHERE "Id" = @p2
+RETURNING 1;
+2024-09-30 11:32:54.844 -03:00 [INF] Handled UpdateContributorCommand with Ardalis.Result.Result`1[Movie.UseCases.Contributors.ContributorDTO] in 4 ms
+2024-09-30 11:32:54.845 -03:00 [INF] Handling GetContributorQuery
+2024-09-30 11:32:54.845 -03:00 [INF] Property ContributorId : 1
+2024-09-30 11:32:54.846 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__contributorId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Name", "c"."Status", "c"."PhoneNumber_CountryCode", "c"."PhoneNumber_Extension", "c"."PhoneNumber_Number"
+FROM "Contributors" AS "c"
+WHERE "c"."Id" = @__contributorId_0
+LIMIT 1
+2024-09-30 11:32:54.846 -03:00 [INF] Handled GetContributorQuery with Ardalis.Result.Result`1[Movie.UseCases.Contributors.ContributorDTO] in 1 ms
+2024-09-30 11:33:27.124 -03:00 [INF] Executed endpoint 'HTTP: PUT /Contributors/{ContributorId:int}'
+2024-09-30 11:33:27.124 -03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:57679/Contributors/1 - 200 null application/json 32285.7273ms

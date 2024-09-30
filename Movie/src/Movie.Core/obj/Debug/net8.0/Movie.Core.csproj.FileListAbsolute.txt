@@ -10,3 +10,4 @@ C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Core\obj\Debug\net8.0\Movie.Core.dll
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Core\obj\Debug\net8.0\refint\Movie.Core.dll
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Core\obj\Debug\net8.0\Movie.Core.pdb
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Core\obj\Debug\net8.0\ref\Movie.Core.dll
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Core\obj\Debug\net8.0\Movie.Core.sourcelink.json

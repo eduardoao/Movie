@@ -17,3 +17,4 @@ C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Infrastructure\obj\Debug\net8.0\refi
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Infrastructure\obj\Debug\net8.0\Movie.Infrastructure.pdb
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Infrastructure\obj\Debug\net8.0\Movie.Infrastructure.genruntimeconfig.cache
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Infrastructure\obj\Debug\net8.0\ref\Movie.Infrastructure.dll
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Infrastructure\obj\Debug\net8.0\Movie.Infrastructure.sourcelink.json

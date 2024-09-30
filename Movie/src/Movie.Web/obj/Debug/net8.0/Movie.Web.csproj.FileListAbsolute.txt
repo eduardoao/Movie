@@ -625,3 +625,4 @@ C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Web\obj\Debug\net8.0\Movie.Web.xml
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Web\obj\Debug\net8.0\Movie.Web.pdb
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Web\obj\Debug\net8.0\Movie.Web.genruntimeconfig.cache
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Web\obj\Debug\net8.0\ref\Movie.Web.dll
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.Web\obj\Debug\net8.0\Movie.Web.sourcelink.json

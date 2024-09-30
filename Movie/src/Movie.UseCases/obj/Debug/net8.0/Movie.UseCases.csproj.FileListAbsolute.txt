@@ -13,3 +13,4 @@ C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseC
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\refint\Movie.UseCases.dll
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.pdb
 C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\ref\Movie.UseCases.dll
+C:\CURSO\POCs\Roadmap\Movie\Movie\src\Movie.UseCases\obj\Debug\net8.0\Movie.UseCases.sourcelink.json
