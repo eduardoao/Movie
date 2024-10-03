@@ -16,3 +16,19 @@ SELECT EXISTS (
 2024-10-03 16:03:53.370 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
 2024-10-03 16:03:53.408 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
 2024-10-03 16:03:53.796 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 426.2567ms
+2024-10-03 16:04:45.392 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-10-03 16:04:45.395 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 4.0615ms
+2024-10-03 16:04:45.439 -03:00 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-10-03 16:04:45.440 -03:00 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 1.1564ms
+2024-10-03 16:04:58.600 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:57679/Contributors - application/json 89
+2024-10-03 16:04:58.602 -03:00 [INF] Executing endpoint 'HTTP: POST /Contributors'
+2024-10-03 16:05:02.644 -03:00 [INF] Handling CreateContributorCommand
+2024-10-03 16:05:02.644 -03:00 [INF] Property Name : John Doe 2
+2024-10-03 16:05:02.644 -03:00 [INF] Property PhoneNumber : 1234567890
+2024-10-03 16:05:04.933 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 10), @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status", "PhoneNumber_CountryCode", "PhoneNumber_Extension", "PhoneNumber_Number")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2024-10-03 16:05:04.949 -03:00 [INF] Handled CreateContributorCommand with Ardalis.Result.Result`1[System.Int32] in 2305 ms
+2024-10-03 16:05:04.956 -03:00 [INF] Executed endpoint 'HTTP: POST /Contributors'
+2024-10-03 16:05:04.959 -03:00 [INF] Request finished HTTP/1.1 POST https://localhost:57679/Contributors - 200 null application/json 6358.7488ms
