@@ -4,7 +4,7 @@ using Movie.Core._2_MovieAggregate;
 
 namespace Movie.Core.MovieAggreate;
 
-public class Movie(string title): EntityBase, IAggregateRoot
+public class Film(string title): EntityBase, IAggregateRoot
 {  
   public string Title { get; private set; }  = Guard.Against.NullOrEmpty(title, nameof(title));
   public string? OriginalTitle { get; private set; } 
