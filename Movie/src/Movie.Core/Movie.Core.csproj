@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="2-MovieAggregate\Events\" />
+    <Folder Include="2-MovieAggregate\Handlers\" />
+    <Folder Include="2-MovieAggregate\Specifications\" />
+  </ItemGroup>
+
 </Project>

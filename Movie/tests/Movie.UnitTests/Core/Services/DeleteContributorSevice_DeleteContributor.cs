@@ -14,7 +14,7 @@ public class DeleteContributorService_DeleteContributor
   private readonly IMediator _mediator = Substitute.For<IMediator>();
   private readonly ILogger<DeleteContributorService> _logger = Substitute.For<ILogger<DeleteContributorService>>();
 
-  private readonly DeleteContributorService _service;
+  private readonly DeleteContributorService _service;  
 
   public DeleteContributorService_DeleteContributor()
   {
@@ -27,5 +27,5 @@ public class DeleteContributorService_DeleteContributor
     var result = await _service.DeleteContributor(0);
 
     Assert.Equal(Ardalis.Result.ResultStatus.NotFound, result.Status);
-  }
+  } 
 }
