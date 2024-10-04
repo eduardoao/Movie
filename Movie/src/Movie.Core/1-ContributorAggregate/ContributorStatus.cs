@@ -1,6 +1,6 @@
 ﻿using Ardalis.SmartEnum;
 
-namespace Movie.Core.ContributorAggregate;
+namespace Movie.Core._1_ContributorAggregate;
 
 public class ContributorStatus : SmartEnum<ContributorStatus>
 {

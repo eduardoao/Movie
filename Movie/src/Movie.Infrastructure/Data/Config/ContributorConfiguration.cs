@@ -1,6 +1,7 @@
 ﻿using Movie.Core.ContributorAggregate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Movie.Core._1_ContributorAggregate;
 
 namespace Movie.Infrastructure.Data.Config;
 

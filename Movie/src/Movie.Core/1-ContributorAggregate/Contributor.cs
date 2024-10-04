@@ -1,7 +1,7 @@
 ﻿using Ardalis.GuardClauses;
 using Ardalis.SharedKernel;
 
-namespace Movie.Core.ContributorAggregate;
+namespace Movie.Core._1_ContributorAggregate;
 
 public class Contributor(string name) : EntityBase, IAggregateRoot
 {

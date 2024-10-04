@@ -1,4 +1,5 @@
 ﻿using Ardalis.Specification;
+using Movie.Core._1_ContributorAggregate;
 
 namespace Movie.Core.ContributorAggregate.Specifications;
 

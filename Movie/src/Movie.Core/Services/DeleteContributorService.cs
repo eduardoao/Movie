@@ -5,6 +5,7 @@ using Movie.Core.ContributorAggregate.Events;
 using Movie.Core.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Movie.Core._1_ContributorAggregate;
 
 namespace Movie.Core.Services;
 

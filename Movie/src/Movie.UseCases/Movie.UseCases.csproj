@@ -10,4 +10,10 @@
     <ProjectReference Include="..\Movie.Core\Movie.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Tags\Delete\" />
+    <Folder Include="Tags\Get\" />
+    <Folder Include="Tags\List\" />
+  </ItemGroup>
+
 </Project>

@@ -2,6 +2,8 @@
 using Ardalis.SharedKernel;
 using Movie.Core.ContributorAggregate;
 using Microsoft.EntityFrameworkCore;
+using Movie.Core._2_MovieAggregate;
+using Movie.Core._1_ContributorAggregate;
 
 namespace Movie.Infrastructure.Data;
 public class AppDbContext : DbContext
@@ -16,6 +18,8 @@ public class AppDbContext : DbContext
   }
 
   public DbSet<Contributor> Contributors => Set<Contributor>();
+
+  public DbSet<Tag> Tags => Set<Tag>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {

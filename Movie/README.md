@@ -169,6 +169,10 @@ In a terminal with the CLI, the command is similar. Run this from the Web projec
 
 ```powershell
 dotnet ef migrations add MIGRATIONNAME -c AppDbContext -p ../Your.ProjectName.Infrastructure/Your.ProjectName.Infrastructure.csproj -s Your.ProjectName.Web.csproj -o Data/Migrations
+
+
+
+ dotnet ef migrations add MIGRATIONNAME -c AppDbContext -p ../Movie.Infrastructure/Movie.Infrastructure.csproj -s Movie.Web.csproj -o Data/Migrations
 ```
 
 To use SqlServer, change `options.UseSqlite(connectionString));` to `options.UseSqlServer(connectionString));` in the `Your.ProjectName.Infrastructure.StartupSetup` file. Also remember to replace the `SqliteConnection` with `DefaultConnection` in the `Your.ProjectName.Web.Program` file, which points to your Database Server.
