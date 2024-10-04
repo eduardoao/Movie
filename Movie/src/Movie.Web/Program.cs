@@ -12,13 +12,15 @@ using FastEndpoints.Swagger;
 using MediatR;
 using Serilog;
 using Serilog.Extensions.Logging;
+using Movie.Core._2_MovieAggregate;
+using Movie.UseCases.Tags.Create;
 
 var logger = Log.Logger = new LoggerConfiguration()
   .Enrich.FromLogContext()
   .WriteTo.Console()
   .CreateLogger();
 
-logger.Information("Starting web host");
+logger.Information("Starting web [API] host");
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -104,7 +106,9 @@ void ConfigureMediatR()
   var mediatRAssemblies = new[]
 {
   Assembly.GetAssembly(typeof(Contributor)), // Core
-  Assembly.GetAssembly(typeof(CreateContributorCommand)) // UseCases
+  Assembly.GetAssembly(typeof(Tag)), // Core
+  Assembly.GetAssembly(typeof(CreateContributorCommand)), // UseCases
+  Assembly.GetAssembly(typeof(CreateTagCommand)) // UseCases
 };
   builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(mediatRAssemblies!));
   builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
