@@ -14,6 +14,7 @@ using Serilog;
 using Serilog.Extensions.Logging;
 using Movie.Core._2_MovieAggregate;
 using Movie.UseCases.Tags.Create;
+using Movie.Core._1_ContributorAggregate;
 
 var logger = Log.Logger = new LoggerConfiguration()
   .Enrich.FromLogContext()
