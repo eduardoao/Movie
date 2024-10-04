@@ -1,8 +1,9 @@
 ﻿using Movie.Infrastructure.Data.Config;
 using FastEndpoints;
 using FluentValidation;
+using Movie.Web.Tags;
 
-namespace Movie.Web.Tags;
+namespace Movie.Web.Contributors;
 
 /// <summary>
 /// See: https://fast-endpoints.com/docs/validation
@@ -13,11 +14,8 @@ public class CreateTagValidator : Validator<CreateTagRequest>
   {
     RuleFor(x => x.Title)
       .NotEmpty()
-      .WithMessage("Tag is required.")
-      .MinimumLength(3)
+      .WithMessage("Title is required.")
+      .MinimumLength(2)
       .MaximumLength(DataSchemaConstants.DEFAULT_NAME_LENGTH);
   }
 }
-
-
-

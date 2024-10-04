@@ -1,5 +1,4 @@
-using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Movie.Web.Tags;
 
@@ -9,5 +8,5 @@ public class CreateTagRequest
 
   [Required]
   public string? Title { get; set; }
-
+  
 }

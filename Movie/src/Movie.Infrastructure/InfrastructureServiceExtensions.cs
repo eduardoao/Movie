@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Movie.UseCases.Tags.List;
 
 namespace Movie.Infrastructure;
 public static class InfrastructureServiceExtensions
@@ -27,6 +28,7 @@ public static class InfrastructureServiceExtensions
     services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
     services.AddScoped(typeof(IReadRepository<>), typeof(EfRepository<>));
     services.AddScoped<IListContributorsQueryService, ListContributorsQueryService>();
+    services.AddScoped<IListTagsQueryService, ListTagsQueryService>();
     services.AddScoped<IDeleteContributorService, DeleteContributorService>();
     services.AddScoped<IDeleteTagService, DeleteTagService>();
     

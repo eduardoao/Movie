@@ -1,7 +1,7 @@
-using System;
 using FastEndpoints;
 using MediatR;
 using Movie.UseCases.Tags.Create;
+using Movie.Web.Contributors;
 
 namespace Movie.Web.Tags;
 

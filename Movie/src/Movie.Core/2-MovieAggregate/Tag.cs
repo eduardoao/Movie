@@ -14,4 +14,9 @@ public class Tag(string title) : EntityBase, IAggregateRoot
     CreatedAt = DateTime.UtcNow;
   }
 
+  public void UpdateName(string newTitle)
+  {
+    Title = Guard.Against.NullOrEmpty(newTitle, nameof(newTitle));
+  }
+
 }

@@ -1,4 +1,3 @@
-using System;
 using Ardalis.Result;
 using Ardalis.SharedKernel;
 using Movie.Core._2_MovieAggregate;
