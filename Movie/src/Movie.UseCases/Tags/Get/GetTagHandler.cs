@@ -18,6 +18,6 @@ public class GetTagHandler(IReadRepository<Tag> _repository): IQueryHandler<GetT
     var entity = await _repository.FirstOrDefaultAsync(spec, cancellationToken);
     if (entity == null) return Result.NotFound();
 
-    return new TagDTO(entity.Id, entity.Title, entity.Enable);
+    return new TagDTO(entity.Id, entity.Title);
   }
 }

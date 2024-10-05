@@ -11,7 +11,7 @@ public class ListTagsQueryService(AppDbContext _db) : IListTagsQueryService
   {
     // NOTE: This will fail if testing with EF InMemory provider!
     var result = await _db.Database.SqlQuery<TagDTO>(
-      $"SELECT Id, Title, Enabled, CreatedAt FROM Tags") // don't fetch other big columns
+      $"SELECT Id, Title, CreatedAt FROM Tags") // don't fetch other big columns
       .ToListAsync();
 
     return result;

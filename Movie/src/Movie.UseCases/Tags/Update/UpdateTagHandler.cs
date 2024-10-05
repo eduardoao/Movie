@@ -18,6 +18,6 @@ public class UpdateTagHandler(IRepository<Tag> _repository): ICommandHandler<Upd
 
     await _repository.UpdateAsync(existingTag, cancellationToken);
 
-    return Result.Success(new TagDTO(existingTag.Id, existingTag.Title, existingTag.Enable));
+    return Result.Success(new TagDTO(existingTag.Id, existingTag.Title));
   }
 }
