@@ -14,5 +14,20 @@ https://stackoverflow.com/questions/25436312/gitignore-not-working
 7 - Pagamento > A definir
 
 
+Para autorização e autenticação, vou usar o keycloak
+Comando para inciar o container
+
+consulta de Informação
+1 - https://www.youtube.com/watch?v=fvxQ8bW0vO8
+2 - https://www.youtube.com/watch?v=Blrn5JyAl6E
+
+
+docker run --name keycloak -p 8080:8080 -e KEYCLOAK_ADMIN=
+admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak start-dev
+
+Criar  um realms. Ex: eaotech
+http://localhost:8081/realms/eaotech
+
+
 Na arquitetura hexagonal, um aggregate é uma coleção de objetos de valor e entidades. É uma forma de simplificar o modelo de domínio, tratando o todo como uma unidade coesa. 
 A arquitetura hexagonal, também conhecida como "arquitetura porta e adaptador", é uma metodologia de desenvolvimento de software. Ela é orientada a objetos, onde as portas são as interfaces e os adapters são as implementações. 

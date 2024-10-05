@@ -16,8 +16,8 @@ internal class TagDeletedHandler (ILogger<TagDeletedHandler> logger,
 
     await emailSender.SendEmailAsync("eoalcantara@gmail.com",
                                      "eoalcantara@gmail.com",
-                                     "Contributor Deleted",
-                                     $"Contributor with id {domainEvent.TagId} was deleted.");
+                                     "Tag Deleted",
+                                     $"Tag with id {domainEvent.TagId} was deleted.");
 
    }
   

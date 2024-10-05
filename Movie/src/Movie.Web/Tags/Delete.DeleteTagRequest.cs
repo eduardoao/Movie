@@ -1,7 +1,3 @@
-using System;
-
-namespace Movie.Web.Tags;
-
 public record DeleteTagRequest
 {
   public const string Route = "/Tags/{TagId:int}";

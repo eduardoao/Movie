@@ -2,14 +2,15 @@
 using Movie.UseCases.Contributors.Delete;
 using FastEndpoints;
 using MediatR;
+using Movie.UseCases.Tags.Delete;
 
 namespace Movie.Web.Tags;
 
 /// <summary>
-/// Delete a Contributor.
+/// Delete a Tag.
 /// </summary>
 /// <remarks>
-/// Delete a Contributor by providing a valid integer id.
+/// Delete a Tag by providing a valid integer id.
 /// </remarks>
 public class Delete(IMediator _mediator)
   : Endpoint<DeleteTagRequest>
@@ -24,7 +25,7 @@ public class Delete(IMediator _mediator)
     DeleteTagRequest request,
     CancellationToken cancellationToken)
   {
-    var command = new DeleteContributorCommand(request.TagId);
+    var command = new DeleteTagCommand(request.TagId);
 
     var result = await _mediator.Send(command, cancellationToken);
 
