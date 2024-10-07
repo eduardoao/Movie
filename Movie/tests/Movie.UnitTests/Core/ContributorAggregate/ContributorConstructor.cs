@@ -1,4 +1,5 @@
-﻿using Movie.Core.ContributorAggregate;
+﻿using Movie.Core._1_ContributorAggregate;
+
 using Xunit;
 
 namespace Movie.UnitTests.Core.ContributorAggregate;

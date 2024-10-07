@@ -1,9 +1,10 @@
 ﻿using Ardalis.SharedKernel;
-using Movie.Core.ContributorAggregate;
+ 
 using Movie.UseCases.Contributors.Create;
 using FluentAssertions;
 using NSubstitute;
 using Xunit;
+using Movie.Core._1_ContributorAggregate;
 
 namespace Movie.UnitTests.UseCases.Contributors;
 

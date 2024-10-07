@@ -1,6 +1,6 @@
 ﻿using Ardalis.Result;
 using Ardalis.SharedKernel;
-using Movie.Core.ContributorAggregate;
+ 
 using Movie.Core.ContributorAggregate.Events;
 using Movie.Core.Interfaces;
 using MediatR;

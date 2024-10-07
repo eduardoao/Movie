@@ -1,6 +1,7 @@
-﻿using Movie.Core.ContributorAggregate;
+﻿
 using Microsoft.EntityFrameworkCore;
 using Xunit;
+
 
 namespace Movie.IntegrationTests.Data;
 
@@ -12,7 +13,7 @@ public class EfRepositoryUpdate : BaseEfRepoTestFixture
     // add a Contributor
     var repository = GetRepository();
     var initialName = Guid.NewGuid().ToString();
-    var Contributor = new Contributor(initialName);
+    var Contributor = new Core._1_ContributorAggregate.Contributor(initialName);
 
     await repository.AddAsync(Contributor);
 

@@ -1,9 +1,10 @@
 ﻿using Ardalis.SharedKernel;
-using Movie.Core.ContributorAggregate;
+
 using Movie.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using NSubstitute;
+using Movie.Core._1_ContributorAggregate;
 
 namespace Movie.IntegrationTests.Data;
 

@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using Ardalis.ListStartupServices;
 using Ardalis.SharedKernel;
-using Movie.Core.ContributorAggregate;
+ 
 using Movie.Core.Interfaces;
 using Movie.Infrastructure;
 using Movie.Infrastructure.Data;

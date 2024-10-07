@@ -1,7 +1,7 @@
 ﻿using Ardalis.Result;
 using Ardalis.SharedKernel;
 using Movie.Core._1_ContributorAggregate;
-using Movie.Core.ContributorAggregate;
+ 
 
 namespace Movie.UseCases.Contributors.Create;
 

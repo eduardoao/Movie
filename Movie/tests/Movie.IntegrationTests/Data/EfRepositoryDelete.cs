@@ -1,4 +1,4 @@
-﻿using Movie.Core.ContributorAggregate;
+﻿ 
 using Xunit;
 
 namespace Movie.IntegrationTests.Data;
@@ -11,7 +11,7 @@ public class EfRepositoryDelete : BaseEfRepoTestFixture
     // add a Contributor
     var repository = GetRepository();
     var initialName = Guid.NewGuid().ToString();
-    var Contributor = new Contributor(initialName);
+    var Contributor = new Core._1_ContributorAggregate.Contributor(initialName);
     await repository.AddAsync(Contributor);
 
     // delete the item

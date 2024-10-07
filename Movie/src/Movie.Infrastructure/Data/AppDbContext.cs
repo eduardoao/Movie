@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using Ardalis.SharedKernel;
-using Movie.Core.ContributorAggregate;
+ 
 using Microsoft.EntityFrameworkCore;
 using Movie.Core._2_MovieAggregate;
 using Movie.Core._1_ContributorAggregate;

@@ -1,10 +1,12 @@
 ﻿using Ardalis.SharedKernel;
-using Movie.Core.ContributorAggregate;
+ 
 using Movie.Core.Services;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
 using Xunit;
+using Movie.Core._1_ContributorAggregate;
+
 
 namespace Movie.UnitTests.Core.Services;
 

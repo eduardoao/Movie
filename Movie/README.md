@@ -291,3 +291,10 @@ Domain events are a great pattern for decoupling a trigger for an operation from
 - [SharedKernel](https://github.com/ardalis/Ardalis.SharedKernel)
 - [SmartEnum](https://github.com/ardalis/SmartEnum)
 - [Specification](https://github.com/ardalis/specification)
+
+
+
+
+# My references to study
+
+https://medium.com/@ahmed.gaduo_93938/how-to-implement-keycloak-authentication-in-a-net-core-application-ce8603698f24
