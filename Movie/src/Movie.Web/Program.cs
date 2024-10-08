@@ -1,20 +1,27 @@
 ﻿using System.Reflection;
 using Ardalis.ListStartupServices;
 using Ardalis.SharedKernel;
- 
+
 using Movie.Core.Interfaces;
 using Movie.Infrastructure;
 using Movie.Infrastructure.Data;
 using Movie.Infrastructure.Email;
 using Movie.UseCases.Contributors.Create;
+
 using FastEndpoints;
 using FastEndpoints.Swagger;
+
 using MediatR;
+
 using Serilog;
 using Serilog.Extensions.Logging;
+
 using Movie.Core._2_MovieAggregate;
 using Movie.UseCases.Tags.Create;
 using Movie.Core._1_ContributorAggregate;
+
+using Keycloak.AuthServices.Authentication;
+using Microsoft.OpenApi.Models;
 
 var logger = Log.Logger = new LoggerConfiguration()
   .Enrich.FromLogContext()
@@ -24,6 +31,14 @@ var logger = Log.Logger = new LoggerConfiguration()
 logger.Information("Starting web [API] host");
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+// *************************KeyCloak Configuration*******************************************
+builder.Services.AddKeycloakAuthentication(builder.Configuration);
+
+
+
+// *************************KeyCloak Configuration*******************************************
 
 builder.Host.UseSerilog((_, config) => config.ReadFrom.Configuration(builder.Configuration));
 var microsoftLogger = new SerilogLoggerFactory(logger)
@@ -35,6 +50,30 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
   options.CheckConsentNeeded = context => true;
   options.MinimumSameSitePolicy = SameSiteMode.None;
 });
+
+
+builder.Services.AddSwaggerGen(c =>
+    {
+      var securityScheme = new OpenApiSecurityScheme
+      {
+        Name = "Keycloak",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.OpenIdConnect,
+        OpenIdConnectUrl = new Uri($"{builder.Configuration["Keycloak:auth-server-url"]}realms/{builder.Configuration["Keycloak:realm"]}/.well-known/openid-configuration"),
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        Reference = new OpenApiReference
+        {
+          Id = "Bearer",
+          Type = ReferenceType.SecurityScheme
+        }
+      };
+      c.AddSecurityDefinition(securityScheme.Reference.Id, securityScheme);
+      c.AddSecurityRequirement(new OpenApiSecurityRequirement
+      {
+        {securityScheme, Array.Empty<string>()}
+      });
+    });
 
 builder.Services.AddFastEndpoints()
                 .SwaggerDocument(o =>
@@ -61,6 +100,7 @@ else
   builder.Services.AddScoped<IEmailSender, MimeKitEmailSender>();
 }
 
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -74,8 +114,7 @@ else
   app.UseHsts();
 }
 
-app.UseFastEndpoints()
-    .UseSwaggerGen(); // Includes AddFileServer and static files middleware
+app.UseFastEndpoints().UseSwaggerGen(); // Includes AddFileServer and static files middleware
 
 app.UseHttpsRedirection();
 

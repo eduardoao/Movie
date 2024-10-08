@@ -1,8 +1,4 @@
-﻿using System.Reflection.Metadata;
-using System.Reflection.Emit;
-using System.Net.NetworkInformation;
-using System.IO.MemoryMappedFiles;
-using Movie.Core.ContributorAggregate.Events;
+﻿using Movie.Core.ContributorAggregate.Events;
 using Movie.Core.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;

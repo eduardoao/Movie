@@ -1,4 +1,3 @@
-using System;
 using Microsoft.EntityFrameworkCore;
 using Movie.UseCases.Tags;
 using Movie.UseCases.Tags.List;

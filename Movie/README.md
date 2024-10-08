@@ -1,3 +1,12 @@
+> Configuração do KeyCloak em uma aplicação .Netcore 
+
+https://www.youtube.com/watch?v=LphlwLonTwA
+https://medium.com/@luylucas10/asp-net-core-api-blazor-and-mvc-keycloak-part-1-74f5eb779dc2
+https://github.com/luylucas10/aspnetcore-keycloak-examples
+
+
+
+
 [![.NET Core](https://github.com/ardalis/CleanArchitecture/workflows/.NET%20Core/badge.svg)](https://github.com/ardalis/CleanArchitecture/actions)
 [![publish Ardalis.CleanArchitecture Template to nuget](https://github.com/ardalis/CleanArchitecture/actions/workflows/publish.yml/badge.svg)](https://github.com/ardalis/CleanArchitecture/actions/workflows/publish.yml)
 [![Ardalis.CleanArchitecture.Template on NuGet](https://img.shields.io/nuget/v/Ardalis.CleanArchitecture.Template?label=Ardalis.CleanArchitecture.Template)](https://www.nuget.org/packages/Ardalis.CleanArchitecture.Template/)

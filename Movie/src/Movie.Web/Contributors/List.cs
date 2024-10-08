@@ -3,6 +3,7 @@ using Movie.UseCases.Contributors;
 using Movie.UseCases.Contributors.List;
 using FastEndpoints;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Movie.Web.Contributors;
 
@@ -12,6 +13,9 @@ namespace Movie.Web.Contributors;
 /// <remarks>
 /// List all contributors - returns a ContributorListResponse containing the Contributors.
 /// </remarks>
+
+
+//[Authorize]
 public class List(IMediator _mediator) : EndpointWithoutRequest<ContributorListResponse>
 {
   public override void Configure()

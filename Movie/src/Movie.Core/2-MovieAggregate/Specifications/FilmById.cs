@@ -1,4 +1,3 @@
-using System;
 using Ardalis.Specification;
 using Movie.Core.MovieAggreate;
 

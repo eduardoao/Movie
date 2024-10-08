@@ -1,6 +1,5 @@
 ﻿using FastEndpoints;
 using FluentValidation;
-using Movie.Web.Tags;
 
 namespace Movie.Web.Tags;
 

@@ -2,7 +2,6 @@
 using FastEndpoints;
 using MediatR;
 using Movie.UseCases.Tags.Get;
-using Movie.Web.Contributors;
 
 namespace Movie.Web.Tags;
 
