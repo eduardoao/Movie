@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "a5f7553c-d73f-46b1-bd17-cbd7c05d6e7a",
+		"name": "Movie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3917513",
+		"_collection_link": "https://eoalcantara.postman.co/workspace/Movie~53112abd-f2c7-4ec7-aeb2-93b6d6d859e3/collection/3917513-a5f7553c-d73f-46b1-bd17-cbd7c05d6e7a?action=share&source=collection_link&creator=3917513"
+	},
+	"item": [
+		{
+			"name": "https://localhost:57679/Contributors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhSW9VSzVETDU4ei0tM3Bhem10d0o2M1c1SnhyVWVxRkpCQTdmX1NTb0VBIn0.eyJleHAiOjE3Mjg1NzAwNzYsImlhdCI6MTcyODU2OTc3NiwianRpIjoiMmJjYTc0OTMtMmM2Yi00MTQ0LThkYTktZWFlMzYwMTE4MzBiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9tb3ZpZSIsImF1ZCI6WyJtb3ZpZS1hcGkiLCJhY2NvdW50Il0sInN1YiI6Ijc3NDg5YmNhLTVlYTgtNDVlNi05ZjQyLTMxMzFmMTk4MmMzZSIsInR5cCI6IkJlYXJlciIsImF6cCI6Im1vdmllLWFwaSIsInNpZCI6IjZjMTk4NTJlLTNkN2EtNGY3ZC1iMzY0LWI0YzU2ZjU1MWY3MyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tb3ZpZSIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgbW92aWUtY2xpZW50LXNjb3BlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJ0ZXN0ZSIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3RlIiwiZ2l2ZW5fbmFtZSI6InRlc3RlIiwiZW1haWwiOiJ0ZXN0ZUBhZG1pbi5jb20ifQ.k07e6RSDyIpjdxPB-WbZusD6TJeBXxFgUus9F1bggrqaL3gCqfQaOTITHD4fhZwzP-HAw8lxIKFfCMxTV4MFMHUV3kuGZuCql9wmPOeehqiY0XzoeBFMcoMk8_QOAcmq0TgrN1WcDIZE6voAkrq9khxFi2AsmBSMaEAGkg5dDgFqX0jsj-66ccEGbV5VBhFBBmZe_3D5eNx8I9u3Rc9fhgkNBaRQBxNsby0FYqXG5f212wDsFrrJB2TwoxwMvKNS9HUap7tYzM7wNzAeAhIWiXzmPc8UrLIw-Q71tGV9TLd42Ces2pH8bxuYrOiBv8j5QnF2zbCdWFngoQ58gt6-eA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhSW9VSzVETDU4ei0tM3Bhem10d0o2M1c1SnhyVWVxRkpCQTdmX1NTb0VBIn0.eyJleHAiOjE3Mjg1NzAwNzYsImlhdCI6MTcyODU2OTc3NiwianRpIjoiMmJjYTc0OTMtMmM2Yi00MTQ0LThkYTktZWFlMzYwMTE4MzBiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9tb3ZpZSIsImF1ZCI6WyJtb3ZpZS1hcGkiLCJhY2NvdW50Il0sInN1YiI6Ijc3NDg5YmNhLTVlYTgtNDVlNi05ZjQyLTMxMzFmMTk4MmMzZSIsInR5cCI6IkJlYXJlciIsImF6cCI6Im1vdmllLWFwaSIsInNpZCI6IjZjMTk4NTJlLTNkN2EtNGY3ZC1iMzY0LWI0YzU2ZjU1MWY3MyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1tb3ZpZSIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgbW92aWUtY2xpZW50LXNjb3BlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJ0ZXN0ZSIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3RlIiwiZ2l2ZW5fbmFtZSI6InRlc3RlIiwiZW1haWwiOiJ0ZXN0ZUBhZG1pbi5jb20ifQ.k07e6RSDyIpjdxPB-WbZusD6TJeBXxFgUus9F1bggrqaL3gCqfQaOTITHD4fhZwzP-HAw8lxIKFfCMxTV4MFMHUV3kuGZuCql9wmPOeehqiY0XzoeBFMcoMk8_QOAcmq0TgrN1WcDIZE6voAkrq9khxFi2AsmBSMaEAGkg5dDgFqX0jsj-66ccEGbV5VBhFBBmZe_3D5eNx8I9u3Rc9fhgkNBaRQBxNsby0FYqXG5f212wDsFrrJB2TwoxwMvKNS9HUap7tYzM7wNzAeAhIWiXzmPc8UrLIw-Q71tGV9TLd42Ces2pH8bxuYrOiBv8j5QnF2zbCdWFngoQ58gt6-eA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:8081/WeatherForecast",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"WeatherForecast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/auth/realms/movie/.well-known/openid-configuration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "movie-api",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "joUUZ3hWTFUqbFC4G0Yn6Zvl5KCI4BRV",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/realms/movie/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"realms",
+						"movie",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

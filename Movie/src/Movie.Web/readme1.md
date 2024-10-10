@@ -50,6 +50,9 @@ React SPA frontend with WebAPI backend using Keycloak open source OIDC provider
 https://www.youtube.com/watch?v=n-ia1hk3eUE
 
 
+# Customizer page login 
+https://www.baeldung.com/keycloak-custom-login-page
+
 # https://www.youtube.com/watch?v=LphlwLonTwA
 > autorização de usuários
 # https://www.youtube.com/watch?v=lQREPSZsRc8
