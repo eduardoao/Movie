@@ -11,6 +11,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     networks:
       - keycloak_network
+    restart: always
 
   pgadmin:
     image: dpage/pgadmin4
@@ -19,6 +20,7 @@ services:
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
       - "16543:80"
+    restart: always    
     depends_on:
       - postgres
     networks:
@@ -49,8 +51,7 @@ services:
       - ./keycloak:/opt/keycloak/data/import
       
     networks:
-      - keycloak_network
-    
+      - keycloak_network    
 
 volumes:
   postgres_data:
