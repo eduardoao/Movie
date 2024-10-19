@@ -1,0 +1,11 @@
+10:09 19/10/2024
+
+1 - Open the Keycloak terminal, on Docker Desktop, and put the command bellow:
+	/opt/keycloak/bin/
+	pwd
+	kc.sh export --file /tmp/keycloak.json 
+
+2 - open CMD terminal
+	docker ps
+	find keycloak ID. Sample: 417174f87fd8
+	docke cp 417174f87fd8:/tmp/keycloak19102024.json c:\target
