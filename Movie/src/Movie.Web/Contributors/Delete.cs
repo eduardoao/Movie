@@ -24,6 +24,7 @@ public class Delete(IMediator _mediator)
     DeleteContributorRequest request,
     CancellationToken cancellationToken)
   {
+    //TODO Teste.
     var command = new DeleteContributorCommand(request.ContributorId);
 
     var result = await _mediator.Send(command, cancellationToken);
